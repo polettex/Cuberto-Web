@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divisiones con márgenes</title>
+<style>
+  html, body {
+    height: 100%; /* Asegura que el html y el body ocupen el 100% del alto de la pantalla */
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Asegura que el contenedor ocupe el 100% del alto disponible */
+    width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho disponible */
+  }
+
+  .subcontainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 300px;
+  }
+
+  .normal, .half {
+    background-color: #a34646;
+    margin: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .half {
+    width: 48%;
+  }
+
+  .reduced {
+    background-color: #000000;
+    margin: 0.5rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+  }
+
+  .reduced-bottom {
+    display: flex;
+  }
+
+  .column {
+    flex: 1;
+    margin: 0.5rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="normal"><h3>Mobile Development</h3><h1 style="color: turquoise;">Grow your business with mobile apps</h1></div>
+    <div class="subcontainer">
+      <div class="half">Div 2.1</div>
+      <div class="half">
+        Div 2.2
+        <img src="img/section-1-m.png" alt="Descripción de la imagen">
+    </div>
+      <div class="half">Div 3.1</div>
+      <div class="half">
+        Div 3.2
+        <img src="img/section-2-m.png" alt="Descripción de la imagen">
+    </div>
+      <div class="half">Div 4.1</div>
+      <div class="half">
+        Div 4.2
+        <img src="img/section-3-m.png" alt="Descripción de la imagen">
+    </div>
+    </div>
+    <div class="reduced">
+      Parte superior
+      <div class="reduced-bottom">
+        <div class="column">Columna 1</div>
+        <div class="column">Columna 2</div>
+        <div class="column">Columna 3</div>
+        <div class="column">Columna 4</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

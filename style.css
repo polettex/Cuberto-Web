@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .normal {
+    flex: 1;
+    background-color: #f1c40f;
+    margin: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .reduced {
+    flex: 1;
+    background-color: #3498db;
+    margin: 0.5rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+  }
